@@ -2,6 +2,19 @@ const webpack = require('webpack');
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
+  pluginOptions: {
+    electronBuilder: {
+      builderOptions: {
+        nsis: {
+          oneClick: false,
+          allowToChangeInstallationDirectory: true,
+          multiLanguageInstaller: true,
+          // allowElevation: true
+          // perMachine: true
+        }
+      },
+    },
+  },
   configureWebpack: {
     // Set up all the aliases we use in our app.
     plugins: [
