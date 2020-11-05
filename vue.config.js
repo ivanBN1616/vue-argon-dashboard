@@ -2,6 +2,9 @@ const webpack = require('webpack');
 const isProd = process.env.NODE_ENV === "production";
 
 module.exports = {
+  devServer: {
+    port: 8080
+  },
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
