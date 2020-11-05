@@ -2,7 +2,7 @@
   "name": "vue-argon-dashboard",
   "private": true,
   "version": "1.0.0",
-  "License": "GNU",
+  "License": "Apache-2.0",
   "productName": "Pro Timing",
   "author": "Jose Ivan Bajana Nogales",
   "scripts": {
